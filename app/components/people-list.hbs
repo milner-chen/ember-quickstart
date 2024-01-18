@@ -2,7 +2,20 @@
 
 <ul>
   {{#each @people as |person|}}
-    <li>{{person}}</li>
+    {{!-- <li>{{person}}</li> --}}
+    <li>
+      {{!-- <button type="button">{{person}}</button> --}}
+      {{!-- add action for user interaction --}}
+      
+      {{!-- <button type="button" {{on 'click' this.showPerson}}>
+        {{person}}
+      </button> --}}
+
+      {{!-- add fn and pass the parameter (person) --}}
+      <button type="button" {{on 'click' (fn this.showPerson person)}}>
+        {{person}}
+      </button>
+    </li>
   {{/each}}
 </ul>
 

@@ -17,3 +17,13 @@ ember generate route [route-name]
   - `Route` object that fetches model used by the template
   - `entry` to app's router (in app/router.js)
   - unit test for this route
+
+
+ember generate component [component-name]
+- create file in `component` and `test`
+- can add the `-gc` flag to include a `.js` file as well (component class?)
+
+ember build --environment=production
+- build: package all assets of the app
+- env flag creates an optimized bundle -> ready for upload to web host
+- when done: all concated + minied assests will be found in /dist
